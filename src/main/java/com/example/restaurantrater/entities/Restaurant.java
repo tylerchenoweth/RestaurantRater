@@ -1,4 +1,4 @@
-package com.example.entities;
+package com.example.restaurantrater.entities;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Table;

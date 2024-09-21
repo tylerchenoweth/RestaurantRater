@@ -1,4 +1,4 @@
-package com.example.entities;
+package com.example.restaurantrater.entities;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Table;
@@ -21,7 +21,7 @@ import lombok.Setter;
 public class Review {
 
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
     // Make FK of user
