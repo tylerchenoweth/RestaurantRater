@@ -1,0 +1,13 @@
+package com.example.restaurantrater;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
+
+@SpringBootTest
+class RestaurantraterApplicationTests {
+
+	@Test
+	void contextLoads() {
+	}
+
+}
