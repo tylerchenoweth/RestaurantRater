@@ -18,13 +18,13 @@ import jakarta.persistence.GenerationType;
 // import javax.persistence.GenerationType;
 
 @Entity
-@Table(name = "restaurant")
+@Table(name = "RESTAURANT")
 // @Getter
 // @Setter
 public class Restaurant {
 
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
     @Column(name = "NAME", nullable = false)
