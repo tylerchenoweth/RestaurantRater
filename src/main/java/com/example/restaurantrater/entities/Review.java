@@ -6,8 +6,11 @@ import jakarta.persistence.Column;
 import jakarta.persistence.Id;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
+import jakarta.persistence.EnumType;
+import jakarta.persistence.Enumerated;
 
 import jakarta.persistence.ManyToOne;
+import jakarta.persistence.OneToOne;
 import jakarta.persistence.JoinColumn;
 
 import lombok.Getter;
@@ -24,11 +27,11 @@ public class Review {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
-    // Make FK of user
-    @Column(name = "USERNAME", nullable = false)
-    private String username;
+    @OneToOne
+    @JoinColumn(name="reviewer_id", nullable = false)
+    private Reviewer reviewer;
 
-    // Rest FK
+    // Restaurant FK
     @ManyToOne
     @JoinColumn(name="restaurant_id", nullable = false)
     private Restaurant restaurant;
@@ -44,5 +47,14 @@ public class Review {
 
     @Column(name = "COMMENTS", nullable = false)
     private String comments;
+
+    @Enumerated(EnumType.STRING)
+    private Status status;
+
+    public enum Status {
+        PENDING,
+        ACCEPTED,
+        REJECTED
+    }
     
 }
