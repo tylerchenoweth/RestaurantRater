@@ -1,3 +1,12 @@
-/home/sh4ck1et0n/testing/RestaurantRater/src/main/java/com/example/restaurantrater/RestaurantraterApplication.java
-/home/sh4ck1et0n/testing/RestaurantRater/src/main/java/com/example/restaurantrater/entities/Restaurant.java
-/home/sh4ck1et0n/testing/RestaurantRater/src/main/java/com/example/restaurantrater/entities/Review.java
+/home/sh4ck1et0n/RestaurantRater/src/main/java/com/example/restaurantrater/RestaurantraterApplication.java
+/home/sh4ck1et0n/RestaurantRater/src/main/java/com/example/restaurantrater/controllers/HomeController.java
+/home/sh4ck1et0n/RestaurantRater/src/main/java/com/example/restaurantrater/config/SecurityConfig.java
+/home/sh4ck1et0n/RestaurantRater/src/main/java/com/example/restaurantrater/controllers/ReviewerController.java
+/home/sh4ck1et0n/RestaurantRater/src/main/java/com/example/restaurantrater/entities/Reviewer.java
+/home/sh4ck1et0n/RestaurantRater/src/main/java/com/example/restaurantrater/controllers/RegistrationController.java
+/home/sh4ck1et0n/RestaurantRater/src/main/java/com/example/restaurantrater/services/ReviewerService.java
+/home/sh4ck1et0n/RestaurantRater/src/main/java/com/example/restaurantrater/entities/Restaurant.java
+/home/sh4ck1et0n/RestaurantRater/src/main/java/com/example/restaurantrater/controllers/LoginController.java
+/home/sh4ck1et0n/RestaurantRater/src/main/java/com/example/restaurantrater/repositories/ReviewerRepository.java
+/home/sh4ck1et0n/RestaurantRater/src/main/java/com/example/restaurantrater/entities/AdminReviewAction.java
+/home/sh4ck1et0n/RestaurantRater/src/main/java/com/example/restaurantrater/entities/Review.java

@@ -1,3 +1,12 @@
-com/example/entities/Restaurant.class
-com/example/entities/Review.class
-com/example/RestaurantraterApplication.class
+com/example/restaurantrater/controllers/HomeController.class
+com/example/restaurantrater/controllers/RegistrationController.class
+com/example/restaurantrater/entities/Review.class
+com/example/restaurantrater/RestaurantraterApplication.class
+com/example/restaurantrater/entities/AdminReviewAction.class
+com/example/restaurantrater/repositories/ReviewerRepository.class
+com/example/restaurantrater/entities/Reviewer.class
+com/example/restaurantrater/controllers/LoginController.class
+com/example/restaurantrater/entities/Restaurant.class
+com/example/restaurantrater/entities/Review$Status.class
+com/example/restaurantrater/services/ReviewerService.class
+com/example/restaurantrater/config/SecurityConfig.class

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Register</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}" />
+</head>
+<body>
+    <h1>Register</h1>
+    <form th:action="@{/register}" th:object="${reviewer}" method="post">
+        <div>
+            <label>Username:</label>
+            <input type="text" th:field="*{username}" />
+            <span th:if="${usernameError}" th:text="${usernameError}" style="color:red;"></span>
+            <span th:if="${#fields.hasErrors('username')}" th:errors="*{username}" style="color:red;"></span>
+        </div>
+        <div>
+            <label>Password:</label>
+            <input type="password" th:field="*{password}" />
+            <span th:if="${#fields.hasErrors('password')}" th:errors="*{password}" style="color:red;"></span>
+        </div>
+        <div>
+            <label>City:</label>
+            <input type="text" th:field="*{city}" />
+            <span th:if="${#fields.hasErrors('city')}" th:errors="*{city}" style="color:red;"></span>
+        </div>
+        <div>
+            <label>State:</label>
+            <input type="text" th:field="*{state}" maxlength="2" />
+            <span th:if="${#fields.hasErrors('state')}" th:errors="*{state}" style="color:red;"></span>
+        </div>
+        <div>
+            <label>Zipcode:</label>
+            <input type="number" th:field="*{zipcode}" />
+            <span th:if="${#fields.hasErrors('zipcode')}" th:errors="*{zipcode}" style="color:red;"></span>
+        </div>
+        <div>
+            <label>Peanut Allergy Interest:</label>
+            <input type="checkbox" th:field="*{peanutAllergyInterest}" />
+        </div>
+        <div>
+            <label>Egg Allergy Interest:</label>
+            <input type="checkbox" th:field="*{eggAllergyInterest}" />
+        </div>
+        <div>
+            <label>Dairy Allergy Interest:</label>
+            <input type="checkbox" th:field="*{dairyAllergyInterest}" />
+        </div>
+        
+        <div>
+            <button type="submit">Register</button>
+        </div>
+    </form>
+    <p>Already have an account? <a th:href="@{/login}">Login here</a></p>
+</body>
+</html>
